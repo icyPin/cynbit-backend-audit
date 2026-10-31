@@ -35,5 +35,8 @@ Before cataloguing application defects, local environment artifacts were isolate
 ## Disclosure 
 
 I have used ai for some findings and help me document the rest. 
+Also not related but a quick thing , i really liked the frontend of the website. just telling
 
-Also not related but a quick thing , i really liked the frontend of the website. just telling 
+---
+
+## Thankyou
