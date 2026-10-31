@@ -16,8 +16,24 @@ the details of which are shared in `Audit.md` file
 
 ---
 
-## 2. Noise Filtering & False-Positive Exclusion
+## 2. Noise Filtering
 
 Before cataloguing application defects, local environment artifacts were isolated and verified:
 
 ---
+
+## 3. What Is Done Well
+
+1.**Brotli Compression & Edge Caching:** HTML and static chunks are compressed via `content-encoding: br` and served with `x-vercel-cache: HIT` from the `bom1` (Mumbai) edge node for Indian users.
+
+2.**HSTS Enabled on HTTPS Responses:** `strict-transport-security: max-age=63072000` (2 years) is present across HTTPS responses.
+
+3.**Dedicated Error & 404 Boundaries:** Non-existent routes (`/this-page-does-not-exist`) return a clean HTTP `404` status (`x-next-error-status: 404`) with custom Next.js error and not-found client chunks (`app/error-8e28947332869732.js`).
+
+---
+
+## Disclosure 
+
+I have used ai for some findings and help me document the rest. 
+
+Also not related but a quick thing , i really liked the frontend of the website. just telling 
