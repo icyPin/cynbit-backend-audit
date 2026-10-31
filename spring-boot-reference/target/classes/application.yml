@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: cynbit-inquiry-reference
+  jackson:
+    default-property-inclusion: non_null
